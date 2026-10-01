@@ -4,9 +4,9 @@
 
 #include "tokenize.h"
 #include "tokenize.c"  /* grader compiles ONLY this file (entrypoint "main.c" in
-                          .shipthatcode.json), so pull tokenize.c in as one
-                          translation unit. Never compile the two .c files
-                          separately — tokenize() would be defined twice. */
+						  .shipthatcode.json), so pull tokenize.c in as one
+						  translation unit. Never compile the two .c files
+						  separately — tokenize() would be defined twice. */
 
 /* TODO (json-tokenize): implement per the lesson description. */
 

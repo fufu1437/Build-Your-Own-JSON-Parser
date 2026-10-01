@@ -15,7 +15,12 @@ int main(void) {
 	while(fgets(line, sizeof line, stdin)) {
 		if(line[0] == '\n' || line[0] == 0) continue;
 		// printf("TODO\n");
-		tokenize();
+		token** tks = tokenize(line);
+		for(size_t i = 0;i < TOKENS_SIZE;i++) {
+			if(tks[i] == NULL) break;
+			printf("%s %s\n", token_str[tks[i]->type], tks[i]->value);
+		}
+		printf("EOF\n");
 	}
 	return 0;
 }

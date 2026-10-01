@@ -4,4 +4,5 @@
 
 token* tokenize() {
 	printf("TODO\n");
+	return NULL;
 }

@@ -1,13 +1,9 @@
 #ifndef TOKENIZE_H
 #define TOKENIZE_H
 
-
-
 typedef struct token {
 
-}token;
-
-
+} token;
 
 token* tokenize();
 

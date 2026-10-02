@@ -40,6 +40,14 @@ token** tokenize(char* v) {
 			tk->type = tk_STRING;
 			int i = 0;
 			while(c != '"') {
+				if(c == '\\') {
+					v++;
+					if(c == 'n') {
+						tk->value[i++] = '\n';
+						v++;
+						continue;
+					}
+				}
 				tk->value[i++] = c;
 				v++;
 			}

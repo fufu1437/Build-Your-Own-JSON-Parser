@@ -98,7 +98,7 @@ token** tokenize(char* v) {
 		}
 		else {
 
-			printf("ERR unexpected character '%c' at position 0ERR unexpected character '%c' at position %d\n", c, c, pos);
+			printf("ERR unexpected character '%c' at position %d\n", c, c, pos);
 		}
 		v++; cow++; pos++;
 	}

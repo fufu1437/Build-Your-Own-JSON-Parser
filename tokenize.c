@@ -13,6 +13,9 @@ const char* token_str[] = {
 	"EOF"
 };
 
+int isEof = 1;
+
+
 #include "tokenize.h"
 
 token** tokenize(char* v) {
@@ -98,6 +101,7 @@ token** tokenize(char* v) {
 		}
 		else {
 			printf("ERR unexpected character '%c' at position %d\n", c, pos);
+			isEof = 0;
 		}
 		v++; cow++; pos++;
 	}

@@ -20,7 +20,9 @@ int main(void) {
 			if(tks[i] == NULL) break;
 			printf("%s %s\n", token_str[tks[i]->type], tks[i]->value);
 		}
-		printf("EOF\n");
+		if(isEof) {
+			printf("EOF\n");
+		}
 	}
 	return 0;
 }

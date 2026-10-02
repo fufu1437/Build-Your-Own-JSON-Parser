@@ -2,6 +2,7 @@
 #define TOKENIZE_H
 
 extern const char* token_str[];
+extern int isEof;
 
 #define TOKENS_SIZE 48
 

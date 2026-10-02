@@ -97,8 +97,8 @@ token** tokenize(char* v) {
 			tks[tks_index++] = tk; tk = NULL;
 		}
 		else {
-// 
-			printf("ERR unexpected character '%c' at position 0ERR unexpected character '%c' at position %d", c, c, pos);
+
+			printf("ERR unexpected character '%c' at position 0ERR unexpected character '%c' at position %d\n", c, c, pos);
 		}
 		v++; cow++; pos++;
 	}
